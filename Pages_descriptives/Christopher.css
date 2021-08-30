@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    min-height: 100vh;
+    background-image: url(../Photo/background.png);
+    background-size: cover;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.four,
+.five,
+.six {
+    padding-top: 6%;
+    padding-bottom: 4%;
+    max-width: 400px;
+}
+
+.seven {
+    padding-top: 15%;
+    max-width: 200px;
+    max-height: 400px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.five,
+.six {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+
+}
+
+.six {
+    text-align: center;
+}
+
+.card:hover {
+    transition: transform .5s;
+    transform: scale(1.05);
+}
+
+img {
+    border-radius: 10%;
+}
